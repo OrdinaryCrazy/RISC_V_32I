@@ -32,5 +32,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_Ver
 INFO: [VRFC 10-311] analyzing module WBSegReg
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module testBench
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/RISC_V_32I/RISC_V_32I.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

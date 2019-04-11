@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Apr 10 23:10:16 2019
+| Date         : Thu Apr 11 10:47:23 2019
 | Host         : DESKTOP-E4RKA7V running 64-bit major release  (build 9200)
 | Command      : report_utilization -file testBench_utilization_synth.rpt -pb testBench_utilization_synth.pb
 | Design       : testBench
