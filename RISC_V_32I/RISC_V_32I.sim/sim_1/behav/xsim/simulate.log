@@ -1,0 +1,10 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Initialing reg values...
+Loading DataRam Content from file...
+WARNING: file F:\VivadoWorkspace\RISCV-CPU\RISCV-CPU.srcs\sources_1\new\SimFiles\1testAll.data could not be opened
+Failed to Open F:\VivadoWorkspace\RISCV-CPU\RISCV-CPU.srcs\sources_1\new\SimFiles\1testAll.data, Do Not Load DataRam values from file!
+Loading InstRam Content from file...
+WARNING: file F:\VivadoWorkspace\RISCV-CPU\RISCV-CPU.srcs\sources_1\new\SimFiles\1testAll.inst could not be opened
+Failed to Open F:\VivadoWorkspace\RISCV-CPU\RISCV-CPU.srcs\sources_1\new\SimFiles\1testAll.inst, Do Not Load InstRam values from file!
+Start Instruction Execution!

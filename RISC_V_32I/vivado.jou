@@ -2,18 +2,34 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Apr  9 19:18:27 2019
-# Process ID: 6088
-# Current directory: C:/Users/workspace/ComputerArchitectureLab_LOCAL/RISC_V_32I
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9756 C:\Users\workspace\ComputerArchitectureLab_LOCAL\RISC_V_32I\RISC_V_32I.xpr
-# Log file: C:/Users/workspace/ComputerArchitectureLab_LOCAL/RISC_V_32I/vivado.log
-# Journal file: C:/Users/workspace/ComputerArchitectureLab_LOCAL/RISC_V_32I\vivado.jou
+# Start of session at: Wed Apr 10 22:56:21 2019
+# Process ID: 4296
+# Current directory: C:/Users/workspace/RISC_V_32I/RISC_V_32I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6816 C:\Users\workspace\RISC_V_32I\RISC_V_32I\RISC_V_32I.xpr
+# Log file: C:/Users/workspace/RISC_V_32I/RISC_V_32I/vivado.log
+# Journal file: C:/Users/workspace/RISC_V_32I/RISC_V_32I\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/workspace/ComputerArchitectureLab_LOCAL/RISC_V_32I/RISC_V_32I.xpr
+open_project C:/Users/workspace/RISC_V_32I/RISC_V_32I/RISC_V_32I.xpr
 update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-add_files {C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/DataExt.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/RegisterFile.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/WBSegReg.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/MEMSegReg.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/HarzardUnit.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/2_Simulation/testBench.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/ALU.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/ControlUnit.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/IDSegReg.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/BranchDecisionMaking.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/RV32Core.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/EXSegReg.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/ImmOperandUnit.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/BRAMModule/InstructionRam.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/NPC_Generator.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/IFSegReg.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/Parameters.v C:/Users/workspace/ComputerArchitectureLab_LOCAL/1_VerilogSourceCode/1_CPUCore_src/BRAMModule/DataRam.v}
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_simulation
+source testBench.tcl
+open_run synth_1 -name synth_1
+close_sim

@@ -89,10 +89,7 @@ always @ (*)
       else RegWriteD <= `NOREGWRITE;
     end
 //------------------- MemToRegD --------------------
-always @ (*)
-    begin
-        MemToRegD <= 1'b0;
-    end
+assign  MemToRegD = 1'b0;
 //------------------- MemWriteD --------------------
 always @ (*)
     begin
@@ -101,8 +98,11 @@ always @ (*)
 //------------------- LoadNpcD ---------------------
 assign LoadNpcD = 1'b0;
 //------------------- RegReadD ---------------------
-assign RegReadD[0] = (Op == ALUR_OP);
-assign RegReadD[1] = (Op == ALUI_OP) || (Op == ALUR_OP);
+always @ (*)
+    begin
+        RegReadD[0] <= (Op == ALUR_OP);
+        RegReadD[1] <= (Op == ALUI_OP) || (Op == ALUR_OP);
+    end
 //------------------- BranchTypeD ------------------
 always @ (*)
     begin
@@ -117,7 +117,7 @@ always @ (*)
         else if (ADD || ADDI || AUIPC)  AluContrlD <= `ADD;
         else if (SUB)                   AluContrlD <= `SUB;
         else if (SLT || SLTI)           AluContrlD <= `SLT;
-        else if (SLTU||SLTIU)           AluContrlD <= `SLTIU;
+        else if (SLTU||SLTIU)           AluContrlD <= `SLTU;
         else if (XOR || XORI)           AluContrlD <= `XOR;
         else if (OR  || ORI )           AluContrlD <= `OR;
         else if (AND || ANDI)           AluContrlD <= `AND;

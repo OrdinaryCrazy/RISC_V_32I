@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1554909023">
+  <File Type="BITSTR-BMM" Name="testBench_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="testBench_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="testBench_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="testBench_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="testBench.tcl"/>
+  <File Type="OPT-TIMING" Name="testBench_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="testBench_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="testBench_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="testBench_reports.tcl"/>
+  <File Type="OPT-DRC" Name="testBench_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="testBench.hwdef"/>
+  <File Type="PWROPT-DCP" Name="testBench_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="testBench_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="testBench_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="testBench_placed.dcp"/>
+  <File Type="PLACE-IO" Name="testBench_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="testBench_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="testBench_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="testBench_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="testBench_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="testBench_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="testBench_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="testBench.bgn"/>
+  <File Type="PLACE-TIMING" Name="testBench_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="testBench_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="testBench.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="testBench_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="testBench_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="testBench_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="testBench.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="testBench_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="testBench_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="testBench_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="testBench_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="testBench_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="testBench_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="testBench.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="testBench_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="testBench.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="testBench_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="testBench_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="testBench.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="testBench_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="testBench_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="testBench_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="testBench_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="testBench_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="testBench_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="testBench_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="testBench_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="testBench_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="testBench_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="testBench_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="testBench_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="testBench_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="testBench_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="testBench_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="testBench_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="testBench_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="testBench_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="testBench_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="testBench.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="testBench_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="testBench.rbt"/>
+  <File Type="BITSTR-NKY" Name="testBench.nky"/>
+  <File Type="BG-DRC" Name="testBench.drc"/>
+  <File Type="RDI-RDI" Name="testBench.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/Parameters.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/BranchDecisionMaking.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/ControlUnit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/DataExt.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/BRAMModule/DataRam.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/EXSegReg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/HarzardUnit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/IDSegReg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/IFSegReg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/ImmOperandUnit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/BRAMModule/InstructionRam.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/MEMSegReg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/NPC_Generator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/RV32Core.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/RegisterFile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/WBSegReg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../1_VerilogSourceCode/2_Simulation/testBench.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="testBench"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

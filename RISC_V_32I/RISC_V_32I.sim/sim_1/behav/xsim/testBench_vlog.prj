@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/ALU.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/BranchDecisionMaking.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/ControlUnit.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/DataExt.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/BRAMModule/DataRam.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/EXSegReg.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/HarzardUnit.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/IDSegReg.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/IFSegReg.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/ImmOperandUnit.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/BRAMModule/InstructionRam.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/MEMSegReg.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/NPC_Generator.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/RV32Core.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/RegisterFile.v" \
+"../../../../../1_VerilogSourceCode/1_CPUCore_src/WBSegReg.v" \
+"../../../../../1_VerilogSourceCode/2_Simulation/testBench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

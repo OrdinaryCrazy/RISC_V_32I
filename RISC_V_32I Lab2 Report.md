@@ -26,7 +26,9 @@
 
 ## Lab2-2
 
-
+*   JALR、BEQ、BNE、BLT、BLTU、BGE、BGEU、JAL
+*   LB、LH、LW、LBU、LHU、
+*   SB、SH、SW、
 
 ## Lab2-3
 

@@ -1,0 +1,438 @@
+
+*** Running vivado
+    with args -log testBench.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testBench.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source testBench.tcl -notrace
+Command: synth_design -top testBench -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12444 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 432.332 ; gain = 97.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'testBench' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v:22]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v:72]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v:97]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v:132]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v:151]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v:36]
+INFO: [Synth 8-6157] synthesizing module 'RV32Core' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RV32Core.v:12]
+INFO: [Synth 8-6157] synthesizing module 'NPC_Generator' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/NPC_Generator.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_Generator' (1#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/NPC_Generator.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IFSegReg' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/IFSegReg.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'IFSegReg' (2#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/IFSegReg.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IDSegReg' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/IDSegReg.v:12]
+INFO: [Synth 8-6157] synthesizing module 'InstructionRam' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/BRAMModule/InstructionRam.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionRam' (3#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/BRAMModule/InstructionRam.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'IDSegReg' (4#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/IDSegReg.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/ControlUnit.v:13]
+	Parameter LUI_OP bound to: 7'b0110111 
+	Parameter AUIPC_OP bound to: 7'b0010111 
+	Parameter ALUI_OP bound to: 7'b0010011 
+	Parameter ALUR_OP bound to: 7'b0110011 
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (5#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/ControlUnit.v:13]
+WARNING: [Synth 8-689] width (5) of port connection 'AluContrlD' does not match port width (4) of module 'ControlUnit' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RV32Core.v:147]
+INFO: [Synth 8-6157] synthesizing module 'ImmOperandUnit' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/ImmOperandUnit.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ImmOperandUnit' (6#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/ImmOperandUnit.v:13]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RegisterFile.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (7#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RegisterFile.v:12]
+INFO: [Synth 8-6157] synthesizing module 'EXSegReg' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/EXSegReg.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'EXSegReg' (8#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/EXSegReg.v:12]
+WARNING: [Synth 8-689] width (4) of port connection 'AluContrlE' does not match port width (5) of module 'EXSegReg' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RV32Core.v:209]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/ALU.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/ALU.v:13]
+INFO: [Synth 8-6157] synthesizing module 'BranchDecisionMaking' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/BranchDecisionMaking.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'BranchDecisionMaking' (10#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/BranchDecisionMaking.v:13]
+INFO: [Synth 8-6157] synthesizing module 'MEMSegReg' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/MEMSegReg.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'MEMSegReg' (11#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/MEMSegReg.v:12]
+INFO: [Synth 8-6157] synthesizing module 'WBSegReg' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/WBSegReg.v:12]
+INFO: [Synth 8-6157] synthesizing module 'DataRam' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/BRAMModule/DataRam.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DataRam' (12#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/BRAMModule/DataRam.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'WBSegReg' (13#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/WBSegReg.v:12]
+INFO: [Synth 8-6157] synthesizing module 'DataExt' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/DataExt.v:14]
+INFO: [Synth 8-226] default block is never used [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/DataExt.v:26]
+INFO: [Synth 8-226] default block is never used [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/DataExt.v:36]
+INFO: [Synth 8-226] default block is never used [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/DataExt.v:45]
+INFO: [Synth 8-226] default block is never used [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/DataExt.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'DataExt' (14#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/DataExt.v:14]
+INFO: [Synth 8-6157] synthesizing module 'HarzardUnit' [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/HarzardUnit.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'HarzardUnit' (15#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/HarzardUnit.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'RV32Core' (16#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RV32Core.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'testBench' (17#1) [C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v:22]
+WARNING: [Synth 8-3331] design HarzardUnit has unconnected port ICacheMiss
+WARNING: [Synth 8-3331] design HarzardUnit has unconnected port DCacheMiss
+WARNING: [Synth 8-3331] design WBSegReg has unconnected port A2[1]
+WARNING: [Synth 8-3331] design WBSegReg has unconnected port A2[0]
+WARNING: [Synth 8-3331] design IDSegReg has unconnected port A[1]
+WARNING: [Synth 8-3331] design IDSegReg has unconnected port A[0]
+WARNING: [Synth 8-3331] design IDSegReg has unconnected port A2[1]
+WARNING: [Synth 8-3331] design IDSegReg has unconnected port A2[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 490.914 ; gain = 156.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 490.914 ; gain = 156.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 490.914 ; gain = 156.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "AluSrc2D0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AluSrc2D0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegFile_reg[1]" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 507.473 ; gain = 172.785
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 48    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 11    
++---RAMs : 
+	             128K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 29    
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 34    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module NPC_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module IFSegReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module InstructionRam 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	             128K Bit         RAMs := 1     
+Module IDSegReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module EXSegReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module MEMSegReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module DataRam 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	             128K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	   2 Input      8 Bit        Muxes := 2     
+Module WBSegReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module DataExt 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+Module HarzardUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module RV32Core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design HarzardUnit has unconnected port ICacheMiss
+WARNING: [Synth 8-3331] design HarzardUnit has unconnected port DCacheMiss
+WARNING: [Synth 8-3331] design WBSegReg has unconnected port A2[1]
+WARNING: [Synth 8-3331] design WBSegReg has unconnected port A2[0]
+WARNING: [Synth 8-3331] design IDSegReg has unconnected port A[1]
+WARNING: [Synth 8-3331] design IDSegReg has unconnected port A[0]
+WARNING: [Synth 8-3331] design IDSegReg has unconnected port A2[1]
+WARNING: [Synth 8-3331] design IDSegReg has unconnected port A2[0]
+INFO: [Synth 8-5784] Optimized 32 bits of RAM "InstructionRamInst/ram_cell_reg" due to constant propagation. Old ram width 32 bits, new ram width 0 bits.
+INFO: [Synth 8-5784] Optimized 32 bits of RAM "InstructionRamInst/ram_cell_reg" due to constant propagation. Old ram width 32 bits, new ram width 0 bits.
+WARNING: [Synth 8-5785] Removed RAM "InstructionRamInst/ram_cell_reg" due to constant propagation. Write data stuck at zero 
+WARNING: [Synth 8-5785] Removed RAM "InstructionRamInst/ram_cell_reg" due to constant propagation. Write data stuck at zero 
+INFO: [Synth 8-3971] The signal DataRamInst/ram_cell_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 631.500 ; gain = 296.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 631.500 ; gain = 296.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 631.500 ; gain = 296.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 631.500 ; gain = 296.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 631.500 ; gain = 296.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 631.500 ; gain = 296.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 631.500 ; gain = 296.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 631.500 ; gain = 296.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 631.500 ; gain = 296.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 631.500 ; gain = 296.813
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 631.500 ; gain = 296.813
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 631.500 ; gain = 296.813
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 737.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 737.320 ; gain = 415.902
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 737.320 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/workspace/RISC_V_32I/RISC_V_32I/RISC_V_32I.runs/synth_1/testBench.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file testBench_utilization_synth.rpt -pb testBench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 10 23:10:16 2019...
