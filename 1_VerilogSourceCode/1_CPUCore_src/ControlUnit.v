@@ -107,7 +107,7 @@ assign SW   = (Op == STORE_OP) && (Fn3 == 3'b010);
 //===============================================================================================
 // 辅助信号
 // 在译码阶段由非load指令产生的寄存器写入标志
-wire RegWD_NL = LUI || AUIPC || (Op == ALUR_OP) || (Op == ALUI_OP);
+wire RegWD_NL = LUI || AUIPC || (Op == ALUR_OP) || (Op == ALUI_OP) || JAL || JALR;
 //===============================================================================================
 // 各输出信号处理
 //------------------- JalD -------------------------
@@ -160,7 +160,8 @@ always @ (*)
         if      (SLL || SLLI)           AluContrlD <= `SLL;
         else if (SRA || SRAI)           AluContrlD <= `SRA;
         else if (SRL || SRLI)           AluContrlD <= `SRL;
-        else if (ADD || ADDI || AUIPC)  AluContrlD <= `ADD;
+        else if (ADD || ADDI || AUIPC || JALR || Op == LOAD_OP || Op == STORE_OP)  
+                                        AluContrlD <= `ADD;
         else if (SUB)                   AluContrlD <= `SUB;
         else if (SLT || SLTI)           AluContrlD <= `SLT;
         else if (SLTU||SLTIU)           AluContrlD <= `SLTU;
@@ -168,11 +169,12 @@ always @ (*)
         else if (OR  || ORI )           AluContrlD <= `OR;
         else if (AND || ANDI)           AluContrlD <= `AND;
         else if (LUI)                   AluContrlD <= `LUI;
-        else                            AluContrlD <= 4'dx;
+        //else                            AluContrlD <= 4'dx;
+        else                            AluContrlD <= 4'b1111;
     end
 //------------------- AluSrc2D ---------------------
 // 00 -- 寄存器；01 -- rs2的5位（移位操作那5位）；10 -- 立即数
-assign AluSrc2D = (SLLI || SRAI || SRLI) ? 2'b01 : ( (Op == ALUR_OP || Op == BR_OP || Op == STORE_OP) ? 2'b00 : 2'b10 );
+assign AluSrc2D = (SLLI || SRAI || SRLI) ? 2'b01 : ( (Op == ALUR_OP || Op == BR_OP) ? 2'b00 : 2'b10 );
 //------------------- AluSrc1D ---------------------
 // 0 -- 寄存器；1 -- PC值
 assign AluSrc1D = AUIPC;
@@ -185,7 +187,7 @@ always @ (*)
         else if (JAL)                                       ImmType <= `JTYPE;
         else if (Op == BR_OP)                               ImmType <= `BTYPE;
         else if (Op == STORE_OP)                            ImmType <= `STYPE;
-        else                                                ImmType <= 3'dx;
+        else                                                ImmType <= 3'b111;
     end
 //--------------------------------------------------
 endmodule

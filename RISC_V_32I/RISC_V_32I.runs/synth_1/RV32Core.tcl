@@ -43,10 +43,9 @@ read_verilog -library xil_defaultlib {
   C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/BRAMModule/InstructionRam.v
   C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/MEMSegReg.v
   C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/NPC_Generator.v
-  C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RV32Core.v
   C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RegisterFile.v
   C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/WBSegReg.v
-  C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v
+  C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RV32Core.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -59,12 +58,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top testBench -part xc7a100tcsg324-1
+synth_design -top RV32Core -part xc7a100tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef testBench.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file testBench_utilization_synth.rpt -pb testBench_utilization_synth.pb"
+write_checkpoint -force -noxdef RV32Core.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file RV32Core_utilization_synth.rpt -pb RV32Core_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

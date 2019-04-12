@@ -1,0 +1,136 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 11 14:08:06 2019
+# Process ID: 14016
+# Current directory: C:/Users/workspace/RISC_V_32I/RISC_V_32I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13328 C:\Users\workspace\RISC_V_32I\RISC_V_32I\RISC_V_32I.xpr
+# Log file: C:/Users/workspace/RISC_V_32I/RISC_V_32I/vivado.log
+# Journal file: C:/Users/workspace/RISC_V_32I/RISC_V_32I\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/workspace/RISC_V_32I/RISC_V_32I/RISC_V_32I.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source testBench.tcl
+set_property -name {xsim.simulate.runtime} -value {25000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source testBench.tcl
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/Instr}} 
+relaunch_sim
+run 10 us
+run 10 us
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/ImmType}} 
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/AluContrlD}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/RegisterFile1/RegFile}} 
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/RegisterFile1/RegFile[3]}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLLI}} {{/testBench/RV32Core1/ControlUnit1/SRLI}} {{/testBench/RV32Core1/ControlUnit1/SRAI}} {{/testBench/RV32Core1/ControlUnit1/SLL}} {{/testBench/RV32Core1/ControlUnit1/SRL}} {{/testBench/RV32Core1/ControlUnit1/SRA}} {{/testBench/RV32Core1/ControlUnit1/ADD}} {{/testBench/RV32Core1/ControlUnit1/SUB}} {{/testBench/RV32Core1/ControlUnit1/ADDI}} {{/testBench/RV32Core1/ControlUnit1/SLT}} {{/testBench/RV32Core1/ControlUnit1/SLTU}} {{/testBench/RV32Core1/ControlUnit1/SLTI}} {{/testBench/RV32Core1/ControlUnit1/XOR}} {{/testBench/RV32Core1/ControlUnit1/OR}} {{/testBench/RV32Core1/ControlUnit1/AND}} {{/testBench/RV32Core1/ControlUnit1/XORI}} {{/testBench/RV32Core1/ControlUnit1/ORI}} {{/testBench/RV32Core1/ControlUnit1/ANDI}} {{/testBench/RV32Core1/ControlUnit1/LUI}} {{/testBench/RV32Core1/ControlUnit1/AUIPC}} {{/testBench/RV32Core1/ControlUnit1/JAL}} {{/testBench/RV32Core1/ControlUnit1/JALR}} {{/testBench/RV32Core1/ControlUnit1/BEQ}} {{/testBench/RV32Core1/ControlUnit1/BNE}} {{/testBench/RV32Core1/ControlUnit1/BLT}} {{/testBench/RV32Core1/ControlUnit1/BLTU}} {{/testBench/RV32Core1/ControlUnit1/BGE}} {{/testBench/RV32Core1/ControlUnit1/BGEU}} {{/testBench/RV32Core1/ControlUnit1/LB}} {{/testBench/RV32Core1/ControlUnit1/LH}} {{/testBench/RV32Core1/ControlUnit1/LW}} {{/testBench/RV32Core1/ControlUnit1/LBU}} {{/testBench/RV32Core1/ControlUnit1/LHU}} {{/testBench/RV32Core1/ControlUnit1/SB}} {{/testBench/RV32Core1/ControlUnit1/SH}} {{/testBench/RV32Core1/ControlUnit1/SW}} {{/testBench/RV32Core1/ControlUnit1/RegWD_NL}} 
+relaunch_sim
+relaunch_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source testBench.tcl
+current_wave_config {Untitled 3}
+log_wave {/testBench/RV32Core1/RegisterFile1/RegFile[3]} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/AluContrlD}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SRA}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/BLT}} {{/testBench/RV32Core1/ControlUnit1/LBU}} {{/testBench/RV32Core1/ControlUnit1/RegWD_NL}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/BNE}} {{/testBench/RV32Core1/ControlUnit1/LH}} {{/testBench/RV32Core1/ControlUnit1/RegWD_NL}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLLI}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SRLI}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SRAI}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLL}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SRL}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SRA}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/ADD}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SUB}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/ADDI}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLT}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLTU}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLTI}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLTIU}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/XOR}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/OR}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/AND}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/XORI}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/ORI}} {{/testBench/RV32Core1/ControlUnit1/ANDI}} {{/testBench/RV32Core1/ControlUnit1/LUI}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/ORI}} {{/testBench/RV32Core1/ControlUnit1/ANDI}} {{/testBench/RV32Core1/ControlUnit1/LUI}} {{/testBench/RV32Core1/ControlUnit1/AUIPC}} {{/testBench/RV32Core1/ControlUnit1/JAL}} {{/testBench/RV32Core1/ControlUnit1/JALR}} {{/testBench/RV32Core1/ControlUnit1/BEQ}} {{/testBench/RV32Core1/ControlUnit1/BNE}} {{/testBench/RV32Core1/ControlUnit1/BLT}} {{/testBench/RV32Core1/ControlUnit1/BLTU}} {{/testBench/RV32Core1/ControlUnit1/BGE}} {{/testBench/RV32Core1/ControlUnit1/BGEU}} {{/testBench/RV32Core1/ControlUnit1/LB}} {{/testBench/RV32Core1/ControlUnit1/LH}} {{/testBench/RV32Core1/ControlUnit1/LW}} {{/testBench/RV32Core1/ControlUnit1/LBU}} {{/testBench/RV32Core1/ControlUnit1/LHU}} {{/testBench/RV32Core1/ControlUnit1/SB}} 
+current_wave_config {Untitled 3}
+log_wave {/testBench/RV32Core1/ControlUnit1/SH} {/testBench/RV32Core1/ControlUnit1/SW} {/testBench/RV32Core1/ControlUnit1/RegWD_NL} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SH}} {{/testBench/RV32Core1/ControlUnit1/SW}} {{/testBench/RV32Core1/ControlUnit1/RegWD_NL}} 
+remove_forces { {/testBench/RV32Core1/ControlUnit1/RegWD_NL} }
+close_sim
+launch_simulation
+source testBench.tcl
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/AluContrlD}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLLI}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SRLI}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SRAI}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLL}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLL}} {{/testBench/RV32Core1/ControlUnit1/SRL}} {{/testBench/RV32Core1/ControlUnit1/SRA}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/ControlUnit1/ADD}} {{/testBench/RV32Core1/ControlUnit1/SUB}} {{/testBench/RV32Core1/ControlUnit1/ADDI}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SLT}} {{/testBench/RV32Core1/ControlUnit1/SLTU}} {{/testBench/RV32Core1/ControlUnit1/SLTI}} {{/testBench/RV32Core1/ControlUnit1/SLTIU}} {{/testBench/RV32Core1/ControlUnit1/XOR}} {{/testBench/RV32Core1/ControlUnit1/OR}} {{/testBench/RV32Core1/ControlUnit1/AND}} {{/testBench/RV32Core1/ControlUnit1/XORI}} {{/testBench/RV32Core1/ControlUnit1/ORI}} {{/testBench/RV32Core1/ControlUnit1/ANDI}} {{/testBench/RV32Core1/ControlUnit1/LUI}} {{/testBench/RV32Core1/ControlUnit1/AUIPC}} {{/testBench/RV32Core1/ControlUnit1/JAL}} {{/testBench/RV32Core1/ControlUnit1/JALR}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/ControlUnit1/BEQ}} {{/testBench/RV32Core1/ControlUnit1/BNE}} {{/testBench/RV32Core1/ControlUnit1/BLT}} {{/testBench/RV32Core1/ControlUnit1/BLTU}} {{/testBench/RV32Core1/ControlUnit1/BGE}} {{/testBench/RV32Core1/ControlUnit1/BGEU}} {{/testBench/RV32Core1/ControlUnit1/LB}} {{/testBench/RV32Core1/ControlUnit1/LH}} {{/testBench/RV32Core1/ControlUnit1/LW}} {{/testBench/RV32Core1/ControlUnit1/LBU}} {{/testBench/RV32Core1/ControlUnit1/LHU}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/ControlUnit1/SB}} {{/testBench/RV32Core1/ControlUnit1/SH}} {{/testBench/RV32Core1/ControlUnit1/SW}} {{/testBench/RV32Core1/ControlUnit1/RegWD_NL}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/Instr}} 
+relaunch_sim
+restart
+run 16430 ns
+run all
+relaunch_sim
+restart
+run 16430 ns
+run 16430 ns
+restart
+run 16430 ns
+run 2 ns

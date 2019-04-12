@@ -55,11 +55,23 @@ module WBSegReg(
         end
 
     wire [31:0] RD_raw;
+    reg [ 3:0] WE_SHIFT;
+    reg [31:0] WD_SHIFT;
+    always @ (*)
+        begin
+            case(WE)
+                4'b0001: WE_SHIFT <= WE << A[1:0];
+                4'b0011: WE_SHIFT <= WE << A[1:0];
+                4'b1111: WE_SHIFT <= WE;
+                default: WE_SHIFT <= 4'b0000;
+            endcase
+            WD_SHIFT <= WD << (A[1:0] * 8);
+        end
     DataRam DataRamInst (
         .clk    ( clk            ),                      //请补全
-        .wea    ( WE             ),                      //请补全
+        .wea    ( WE_SHIFT       ),                      //请补全
         .addra  ( A[31:2]        ),                      //请补全
-        .dina   ( WD             ),                      //请补全
+        .dina   ( WD_SHIFT       ),                      //请补全
         .douta  ( RD_raw         ),
         .web    ( WE2            ),
         .addrb  ( A2[31:2]       ),

@@ -41,16 +41,16 @@ always @ (*)
             end
         else if (BranchE || JalrE)                                              // Ex阶段冲刷
             begin
-                StallF <= 1'b0; FlushF <= 1'b1;
+                StallF <= 1'b0; FlushF <= 1'b0;
                 StallD <= 1'b0; FlushD <= 1'b1;
-                StallE <= 1'b0; FlushE <= 1'b0;
+                StallE <= 1'b0; FlushE <= 1'b1;
                 StallM <= 1'b0; FlushM <= 1'b0;
                 StallW <= 1'b0; FlushW <= 1'b0;
             end
         else if (JalD)                                                          // ID阶段冲刷
             begin
-                StallF <= 1'b0; FlushF <= 1'b1;
-                StallD <= 1'b0; FlushD <= 1'b0;
+                StallF <= 1'b0; FlushF <= 1'b0;
+                StallD <= 1'b0; FlushD <= 1'b1;
                 StallE <= 1'b0; FlushE <= 1'b0;
                 StallM <= 1'b0; FlushM <= 1'b0;
                 StallW <= 1'b0; FlushW <= 1'b0;

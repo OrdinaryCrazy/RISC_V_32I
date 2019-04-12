@@ -24,18 +24,19 @@ always @ (*)
             `LB:
                 begin
                     case(LoadedBytesSelect)
-                        2'b00:  OUT <= { {25{IN[ 7]}}, IN[ 6: 0] };
-                        2'b01:  OUT <= { {25{IN[15]}}, IN[14: 8] };
-                        2'b10:  OUT <= { {25{IN[23]}}, IN[22:16] };
-                        2'b11:  OUT <= { {25{IN[31]}}, IN[30:24] };
+                        2'b00:  OUT <= { {24{IN[ 7]}}, IN[ 7: 0] };
+                        2'b01:  OUT <= { {24{IN[15]}}, IN[15: 8] };
+                        2'b10:  OUT <= { {24{IN[23]}}, IN[23:16] };
+                        2'b11:  OUT <= { {24{IN[31]}}, IN[31:24] };
                         default:OUT <= 32'bx;
                     endcase
                 end
             `LH:
                 begin
                     casex(LoadedBytesSelect)
-                        2'b0x:  OUT <= { {17{IN[15]}}, IN[14: 0] };
-                        2'b1x:  OUT <= { {17{IN[31]}}, IN[30:16] };
+                        2'b00:  OUT <= { {16{IN[15]}}, IN[15: 0] };
+                        2'b01:  OUT <= { {16{IN[23]}}, IN[23: 8] };
+                        2'b10:  OUT <= { {16{IN[31]}}, IN[31:16] };
                         default:OUT <= 32'bx;
                     endcase
                 end
@@ -53,8 +54,9 @@ always @ (*)
             `LHU:
                 begin
                     casex(LoadedBytesSelect)
-                        2'b0x:  OUT <= { 16'b0, IN[15: 0] };
-                        2'b1x:  OUT <= { 16'b0, IN[31:16] };
+                        2'b00:  OUT <= { 16'b0, IN[15: 0] };
+                        2'b01:  OUT <= { 16'b0, IN[23: 8] };
+                        2'b10:  OUT <= { 16'b0, IN[31:16] };
                         default:OUT <= 32'bx;
                     endcase
                 end

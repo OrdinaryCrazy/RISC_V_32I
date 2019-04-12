@@ -45,7 +45,7 @@ always@(*)
             `SLTU:   AluOut <= $unsigned(Operand1) < $unsigned(Operand2) ? 32'd1 : 32'd0;
             //=====================================================================
             // 立即数加载 Load Upper Immediate，使用U类格式
-            `LUI:    AluOut <= {Operand1[31:12],12'd0};
+            `LUI:    AluOut <= {Operand2[31:12],12'd0};
             //=====================================================================
             default:    AluOut <= 32'b0;
         endcase

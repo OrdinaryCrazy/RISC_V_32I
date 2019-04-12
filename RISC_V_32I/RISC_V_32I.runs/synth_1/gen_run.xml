@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1554950823">
-  <File Type="PA-TCL" Name="testBench.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="testBench_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="testBench_reports.tcl"/>
-  <File Type="RDS-RDS" Name="testBench.vds"/>
-  <File Type="RDS-UTIL" Name="testBench_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="testBench_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="testBench.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="testBench_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="testBench_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1555087249">
+  <File Type="PA-TCL" Name="RV32Core.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="RV32Core_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="RV32Core_reports.tcl"/>
+  <File Type="RDS-RDS" Name="RV32Core.vds"/>
+  <File Type="RDS-UTIL" Name="RV32Core_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="RV32Core_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="RV32Core.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RV32Core_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="RV32Core_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/Parameters.v">
@@ -109,13 +109,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/RV32Core.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/RegisterFile.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -130,7 +123,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../1_VerilogSourceCode/2_Simulation/testBench.v">
+    <File Path="$PPRDIR/../1_VerilogSourceCode/1_CPUCore_src/RV32Core.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -139,7 +132,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="testBench"/>
+      <Option Name="TopModule" Val="RV32Core"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
