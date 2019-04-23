@@ -19,5 +19,5 @@ C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/Parameters.v,155
 C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RV32Core.v,1552871881,verilog,,C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RegisterFile.v,,RV32Core,,,,,,,,
 C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RegisterFile.v,1552871881,verilog,,C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/WBSegReg.v,,RegisterFile,,,,,,,,
 C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/WBSegReg.v,1555086849,verilog,,C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v,,WBSegReg,,,,,,,,
-C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v,1555086952,verilog,,,,testBench,,,,,,,,
+C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v,1555153177,verilog,,,,testBench,,,,,,,,
 C:/Users/workspace/RISC_V_32I/RISC_V_32I/RISC_V_32I.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,

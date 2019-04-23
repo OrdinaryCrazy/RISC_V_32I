@@ -1,0 +1,34 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/BranchDecisionMaking.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecisionMaking
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/DataExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/BRAMModule/DataRam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataRam
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/EXSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/HarzardUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/IDSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/IFSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/ImmOperandUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmOperandUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/BRAMModule/InstructionRam.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionRam
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/MEMSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/NPC_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RV32Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/1_CPUCore_src/WBSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WBSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/1_VerilogSourceCode/2_Simulation/testBench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testBench
