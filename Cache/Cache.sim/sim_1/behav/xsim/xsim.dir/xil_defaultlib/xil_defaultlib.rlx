@@ -1,0 +1,25 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Testbench/cpu_tb.v,1558149327,verilog,,,,cpu_tb,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/ALU.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/ControlUnit.v,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/Parameters.v,ALU,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/ControlUnit.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/DataExt.v,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/Parameters.v,ControlUnit,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/DataExt.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/EXSegReg.v,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/Parameters.v,DataExt,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/EXSegReg.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/HarzardUnit.v,,EXSegReg,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/HarzardUnit.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/IDSegReg.v,,HarzardUnit,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/IDSegReg.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/IFSegReg.v,,IDSegReg,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/IFSegReg.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/ImmOperandUnit.v,,IFSegReg,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/ImmOperandUnit.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/InstructionRamNoCache.v,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/Parameters.v,ImmOperandUnit,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/InstructionRAM.sv,1558178141,systemVerilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache.sv,,InstructionRam,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/InstructionRamNoCache.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/MEMSegReg.v,,InstructionRamNoCache,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/MEMSegReg.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/RV32Core.v,,MEMSegReg,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/Parameters.v,1558149327,verilog,,,,,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/RV32Core.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/RegisterFile.v,,RV32Core,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/RegisterFile.v,1558149327,verilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/WBSegReg.v,,RegisterFile,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/WBSegReg.v,1558149327,verilog,,,,WBSegReg,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache.sv,1558186071,systemVerilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/main_mem.sv,,cache,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache_tb.sv,1557019788,systemVerilog,,,,cache_tb,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/main_mem.sv,1558149327,systemVerilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/mem.sv,,main_mem,,,,,,,,
+C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/mem.sv,1558176349,systemVerilog,,C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache_tb.sv,,mem,,,,,,,,
+C:/Users/workspace/RISC_V_32I/Cache/Cache.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,

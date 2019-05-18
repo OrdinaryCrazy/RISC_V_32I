@@ -1,0 +1,25 @@
+
+*** Running vivado
+    with args -log WBSegReg.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source WBSegReg.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source WBSegReg.tcl -notrace
+Command: synth_design -top WBSegReg -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3712 
+ERROR: [Synth 8-1031] frequency is not declared [C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache.sv:121]
+INFO: [Synth 8-2350] module cache ignored due to previous errors [C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache.sv:1]
+Failed to read verilog 'C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache.sv'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Sat May 18 20:34:17 2019...

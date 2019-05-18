@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/ALU.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/ControlUnit.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/DataExt.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/EXSegReg.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/HarzardUnit.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/IDSegReg.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/IFSegReg.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/ImmOperandUnit.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/InstructionRamNoCache.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/MEMSegReg.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/RV32Core.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/RegisterFile.v" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/WBSegReg.v" \
+
+sv xil_defaultlib  \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/InstructionRAM.sv" \
+"../../../../../3_CacheLab/CacheSrcCode/cache.sv" \
+"../../../../../3_CacheLab/CacheSrcCode/main_mem.sv" \
+"../../../../../3_CacheLab/CacheSrcCode/mem.sv" \
+
+verilog xil_defaultlib  \
+"../../../../../3_CacheLab/CPUSrcCode/Testbench/cpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
