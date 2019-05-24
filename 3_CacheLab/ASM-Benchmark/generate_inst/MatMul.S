@@ -48,13 +48,13 @@ _start:
     blt    t0, a3, MatMulLoopI
     
     # 计算结束，死循环
-# InfLoop:
-    # jal    zero, InfLoop
-infinity_loop:
-    xor t0,zero,zero  # 排序结束，死循环
-flush:
-    lw t1,(t0)
-    addi t0,t0,4
-    jal zero, flush
-    jal zero, infinity_loop
+InfLoop:
+    jal    zero, InfLoop
+# infinity_loop:
+#     xor t0,zero,zero  # 排序结束，死循环
+# flush:
+#     lw t1,(t0)
+#     addi t0,t0,4
+#     jal zero, flush
+#     jal zero, infinity_loop
 

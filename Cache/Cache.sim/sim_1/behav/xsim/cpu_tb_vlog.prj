@@ -15,7 +15,7 @@ verilog xil_defaultlib  \
 "../../../../../3_CacheLab/CPUSrcCode/Verilog/WBSegReg.v" \
 
 sv xil_defaultlib  \
-"../../../../../3_CacheLab/CPUSrcCode/Verilog/InstructionRAM.sv" \
+"../../../../../3_CacheLab/CPUSrcCode/Verilog/InstructionRam.sv" \
 "../../../../../3_CacheLab/CacheSrcCode/cache.sv" \
 "../../../../../3_CacheLab/CacheSrcCode/main_mem.sv" \
 "../../../../../3_CacheLab/CacheSrcCode/mem.sv" \

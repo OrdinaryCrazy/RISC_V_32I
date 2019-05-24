@@ -57,14 +57,14 @@ assign {unused_addr, tag_addr, set_addr, line_addr, word_addr} = addr;  // 拆�
 reg cache_hit = 1'b0;
 
 //********************************************************************************************************************
-enum {FIFO, LRU} swap_out_strategy;
+/* enum {FIFO, LRU} swap_out_strategy; */
 
 integer time_cnt;
 
 reg     [ WAY_CNT-1 : 0 ]   way_addr;   // 路地址
 reg     [ WAY_CNT-1 : 0 ]   out_way;    // 扇出路
 //reg     [ WAY_CNT : 0 ] LRU__record[SET_SIZE][WAY_CNT];
-reg     [      15 : 0 ] LRU__record[SET_SIZE][WAY_CNT];
+/* reg     [      15 : 0 ] LRU__record[SET_SIZE][WAY_CNT]; */
 reg     [ WAY_CNT : 0 ] FIFO_record[SET_SIZE][WAY_CNT];
 
 always @ (*) begin              // 判断 输入的address 是否在 cache 中命中
@@ -90,15 +90,15 @@ end
 always @(*) begin
     if( ~cache_hit & (wr_req | rd_req) ) begin
     //---------------------------------------------------------------------
-        if( swap_out_strategy == LRU ) begin
+       /*  if( swap_out_strategy == LRU ) begin */
         //--------------------------------------------
-            for(integer i = 0; i < WAY_CNT; i++) begin
+           /*  for(integer i = 0; i < WAY_CNT; i++) begin
                 out_way = 0;
                 if( LRU__record[set_addr][i] < LRU__record[set_addr][out_way])
                     out_way = i;
-            end
+            end */
         //--------------------------------------------
-        end else begin
+        /* end else begin */
         //--------------------------------------------
             integer free_available = 0;
             for(integer i = 0; i < WAY_CNT; i++) begin
@@ -124,17 +124,10 @@ always @(*) begin
                     end
                 end
             //-----------------------------------
-            end else begin
-                for(integer i = 0; i < WAY_CNT; i++) begin
-                    if( FIFO_record[set_addr][i] != 0) begin
-                        FIFO_record[set_addr][i] = FIFO_record[set_addr][i] + 1;
-                    end
-                end
-            end
-            //-----------------------------------
+            end 
             FIFO_record[set_addr][out_way] = 1;
         //--------------------------------------------
-        end
+        /* end */ 
     end
 end
 
@@ -143,15 +136,15 @@ always @ (posedge clk or posedge rst) begin     // ?? cache ???
         cache_stat <= IDLE;
         time_cnt = 0;
     //------------------------------------
-        //swap_out_strategy <= FIFO;
-        swap_out_strategy <= LRU;
+        /* swap_out_strategy <= FIFO; */
+        //swap_out_strategy <= LRU;
     //------------------------------------
         for(integer i=0; i<SET_SIZE; i++) begin
 //********************************************************************************************************************
             for(integer j = 0; j < WAY_CNT; j++) begin
                 dirty[i][j] = 1'b0;
                 valid[i][j] = 1'b0;
-                LRU__record[i][j] = 0;
+                /* LRU__record[i][j] = 0; */
                 FIFO_record[i][j] = 0;
             end
 //********************************************************************************************************************
@@ -176,7 +169,7 @@ always @ (posedge clk or posedge rst) begin     // ?? cache ???
                                 // 写数据的同时置脏位  
                                 dirty[set_addr][way_addr] <= 1'b1;                     
                             end 
-                            LRU__record[set_addr][way_addr] <= time_cnt;
+                            /* LRU__record[set_addr][way_addr] <= time_cnt; */
                             //---------------------------------------------------------------------
                         end else begin
                             if(wr_req | rd_req) begin   // 如果 cache 未命中，并且有读写请求，则需要进行换入
@@ -207,11 +200,12 @@ always @ (posedge clk or posedge rst) begin     // ?? cache ???
                     end
         SWAP_IN_OK:begin           // 上一个周期换入成功，这周期将主存读出的line写入cache，并更新tag，置高valid，置低dirty
                     //------------------------------------------------------------------------------------------------
-                        for(integer i=0; i<LINE_SIZE; i++)  cache_mem[mem_rd_set_addr][out_way][i] <= mem_rd_line[i];
+                        for(integer i=0; i<LINE_SIZE; i++)  
+                        cache_mem[mem_rd_set_addr][out_way][i] <= mem_rd_line[i];
                         cache_tags[mem_rd_set_addr][out_way] <= mem_rd_tag_addr;
                         valid     [mem_rd_set_addr][out_way] <= 1'b1;
                         dirty     [mem_rd_set_addr][out_way] <= 1'b0;
-                        LRU__record[mem_rd_set_addr][out_way] <= time_cnt;
+                        /* LRU__record[mem_rd_set_addr][out_way] <= time_cnt; */
                     //------------------------------------------------------------------------------------------------
                         cache_stat <= IDLE;        // 回到就绪状态
                    end

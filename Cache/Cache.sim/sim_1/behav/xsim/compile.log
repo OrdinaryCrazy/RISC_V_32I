@@ -1,9 +1,26 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/InstructionRAM.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionRam
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cache
-WARNING: [VRFC 10-3824] variable 'free_available' must explicitly be declared as automatic or static [C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache.sv:103]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/main_mem.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module main_mem
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/mem.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/DataExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/EXSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/HarzardUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/IDSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/IFSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/ImmOperandUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmOperandUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/InstructionRamNoCache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionRamNoCache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/MEMSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/RV32Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/WBSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WBSegReg

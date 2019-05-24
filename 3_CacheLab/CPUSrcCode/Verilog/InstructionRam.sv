@@ -41,11 +41,7 @@ initial begin
     ram_cell[      27] = 32'hfad34ae3;
     ram_cell[      28] = 32'h00428293;
     ram_cell[      29] = 32'hfad2c4e3;
-    ram_cell[      30] = 32'h000042b3;
-    ram_cell[      31] = 32'h0002a303;
-    ram_cell[      32] = 32'h00428293;
-    ram_cell[      33] = 32'hff9ff06f;
-    ram_cell[      34] = 32'hff1ff06f;
+    ram_cell[      30] = 32'h0000006f;
 
 end
 

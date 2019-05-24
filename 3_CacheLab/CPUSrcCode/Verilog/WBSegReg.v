@@ -89,9 +89,9 @@ always @ (posedge clk or posedge rst) begin
 end
 
 cache #(
-    .LINE_ADDR_LEN  ( 3             ),
+    .LINE_ADDR_LEN  ( 5             ),
     .SET_ADDR_LEN   ( 2             ),
-    .TAG_ADDR_LEN   ( 8             ),
+    .TAG_ADDR_LEN   ( 6             ),
     .WAY_CNT        ( 4             )
 ) cache_test_instance (
     .clk            ( clk           ),

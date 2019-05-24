@@ -5,11 +5,11 @@ Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/InstructionRAM.sv" Line 2. Module InstructionRam doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/InstructionRam.sv" Line 2. Module InstructionRam doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/ControlUnit.v" Line 2. Module ControlUnit doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/workspace/RISC_V_32I/3_CacheLab/CPUSrcCode/Verilog/ALU.v" Line 7. Module ALU doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache.sv" Line 1. Module cache(SET_ADDR_LEN=2,TAG_ADDR_LEN=8,WAY_CNT=4) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/main_mem.sv" Line 2. Module main_mem(ADDR_LEN=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/cache.sv" Line 1. Module cache(LINE_ADDR_LEN=5,SET_ADDR_LEN=2,WAY_CNT=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/main_mem.sv" Line 2. Module main_mem(LINE_ADDR_LEN=5) doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/workspace/RISC_V_32I/3_CacheLab/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=13) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
@@ -25,8 +25,8 @@ Compiling module xil_defaultlib.EXSegReg
 Compiling module xil_defaultlib.ALU
 Compiling module xil_defaultlib.MEMSegReg
 Compiling module xil_defaultlib.mem(ADDR_LEN=13)
-Compiling module xil_defaultlib.main_mem(ADDR_LEN=10)
-Compiling module xil_defaultlib.cache(SET_ADDR_LEN=2,TAG_ADDR_LE...
+Compiling module xil_defaultlib.main_mem(LINE_ADDR_LEN=5)
+Compiling module xil_defaultlib.cache(LINE_ADDR_LEN=5,SET_ADDR_L...
 Compiling module xil_defaultlib.WBSegReg
 Compiling module xil_defaultlib.HarzardUnit
 Compiling module xil_defaultlib.RV32Core
