@@ -13,6 +13,9 @@ module NPC_Generator(
     input wire [31:0] PCF,JalrTarget, BranchTarget, JalTarget,
     input wire BranchE,JalD,JalrE,
     output reg [31:0] PC_In
+//------------------------------------------
+    input
+//------------------------------------------
     );
     always @(*)
     begin
