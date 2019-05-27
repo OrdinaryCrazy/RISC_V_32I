@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/ALU.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/BranchDecisionMaking.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/ControlUnit.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/DataExt.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/BRAMModule/DataRam.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/EXSegReg.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/HarzardUnit.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/IDSegReg.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/IFSegReg.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/ImmOperandUnit.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/BRAMModule/InstructionRam.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/MEMSegReg.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/NPC_Generator.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/RV32Core.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/RegisterFile.v" \
+"../../../../../../ComputerArchitectureLab/6_branch_prediction/cpu_rtl/WBSegReg.v" \
+"../../../../../6_BranchPrediction/test/testBench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

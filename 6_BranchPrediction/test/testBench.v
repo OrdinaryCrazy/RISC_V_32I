@@ -13,10 +13,10 @@
 // !!! ALL YOU NEED TO CHANGE IS 4 FILE PATH BELOW !!!	
 //				(they are all optional, you can run cpu without change paths here,if files are failed to open, we will not dump the content to .txt and will not try to initial your bram)
 //////////////////////////////////////////////////////////////////////////////////
-`define DataRamContentLoadPath "C:\\Users\\workspace\\RISC_V_32I\\1_VerilogSourceCode\\2_Simulation\\1testAll.data"
-`define InstRamContentLoadPath "C:\\Users\\workspace\\RISC_V_32I\\1_VerilogSourceCode\\2_Simulation\\1testAll.inst"
-`define DataRamContentSavePath "C:\\Users\\workspace\\RISC_V_32I\\1_VerilogSourceCode\\2_Simulation\\1DataRamContent.txt"
-`define InstRamContentSavePath "C:\\Users\\workspace\\RISC_V_32I\\1_VerilogSourceCode\\2_Simulation\\1InstRamContent.txt"
+`define DataRamContentLoadPath "C:\\Users\\workspace\\RISC_V_32I\\6_BranchPrediction\\test\\btb.data"
+`define InstRamContentLoadPath "C:\\Users\\workspace\\RISC_V_32I\\6_BranchPrediction\\test\\btb.inst"
+`define DataRamContentSavePath "C:\\Users\\workspace\\RISC_V_32I\\6_BranchPrediction\\test\\btbDataRamContent.txt"
+`define InstRamContentSavePath "C:\\Users\\workspace\\RISC_V_32I\\6_BranchPrediction\\test\\btbInstRamContent.txt"
 `define BRAMWORDS 4096  //a word is 32bit, so our bram is 4096*32bit
 
 module testBench(

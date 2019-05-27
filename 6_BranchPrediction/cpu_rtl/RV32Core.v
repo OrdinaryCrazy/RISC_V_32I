@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: USTC ESLAB（Embeded System Lab�?
+// Company: USTC ESLAB（Embeded System Lab�?
 // Engineer: Haojun Xia(xhjustc@mail.ustc.edu.cn)
 // Create Date: 2019/02/08 16:29:41
 // Design Name: RISCV-Pipline CPU
@@ -82,6 +82,13 @@ module RV32Core(
     wire [1:0] Forward1E;
     wire [1:0] Forward2E;
     wire [1:0] LoadedBytesSelect;
+//------------------------------------------
+    wire PredictedF;
+    wire PredictedD;
+    wire PredictedE;
+    wire [31:0] PredictedPC;
+    wire [6:0] OpE;
+//------------------------------------------
     //wire values assignments
     assign {Funct7D, Rs2D, Rs1D, Funct3D, RdD, OpCodeD} = Instr;
     assign JalNPC=ImmD+PCD;
@@ -104,7 +111,12 @@ module RV32Core(
         .BranchE(BranchE),
         .JalD(JalD),
         .JalrE(JalrE),
-        .PC_In(PC_In)
+//------------------------------------------
+        .PC_In(PC_In),
+        .PredictedPC(PredictedPC),
+        .PredictedF(PredictedF),
+        .PredictedE(PredictedE)
+//------------------------------------------
     );
 
     IFSegReg IFSegReg1(
@@ -129,7 +141,11 @@ module RV32Core(
         .WE2(CPU_Debug_InstRAM_WE2),
         .RD2(CPU_Debug_InstRAM_RD2),
         .PCF(PCF),
-        .PCD(PCD) 
+//------------------------------------------
+        .PCD(PCD),
+        .PredictedF(PredictedF),
+        .PredictedD(PredictedD)
+//------------------------------------------
     );
 
     ControlUnit ControlUnit1(
@@ -210,7 +226,13 @@ module RV32Core(
         .AluSrc1D(AluSrc1D),
         .AluSrc1E(AluSrc1E),
         .AluSrc2D(AluSrc2D),
-        .AluSrc2E(AluSrc2E)
+//------------------------------------------
+        .AluSrc2E(AluSrc2E),
+        .PredictedD(PredictedD),
+        .PredictedE(PredictedE),
+        .Op(OpCodeD),
+        .OpE(OpE)
+//------------------------------------------
     	); 
 
     ALU ALU1(
@@ -316,7 +338,27 @@ module RV32Core(
         .StallW(StallW),
         .FlushW(FlushW),
         .Forward1E(Forward1E),
-        .Forward2E(Forward2E)
-    	);    
-    	         
+//------------------------------------------
+        .Forward2E(Forward2E),
+        .PredictedE(PredictedE)
+//------------------------------------------
+    	);
+//------------------------------------------
+    // ---------------------------------------------
+    // btb Unit
+    // ---------------------------------------------
+    btb #(
+        .ENTRY_NUM(64)
+    ) btb1 (
+        .clk(CPU_CLK),
+        .rst(CPU_RST),
+        .PCF(PCF),
+        .PCE(PCE),
+        .BrNPC(BrNPC),
+        .BranchE(BranchE),
+        .OpE(OpE),
+        .PredictedPC(PredictedPC),
+        .PredictedF(PredictedF)
+    );
+//------------------------------------------
 endmodule

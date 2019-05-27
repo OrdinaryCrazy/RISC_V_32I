@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../6_BranchPrediction/cpu_rtl/ALU.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/BranchDecisionMaking.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/ControlUnit.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/DataExt.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/BRAMModule/DataRam.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/EXSegReg.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/HarzardUnit.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/IDSegReg.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/IFSegReg.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/ImmOperandUnit.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/BRAMModule/InstructionRam.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/MEMSegReg.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/NPC_Generator.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/RV32Core.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/RegisterFile.v" \
+"../../../../../6_BranchPrediction/cpu_rtl/WBSegReg.v" \
+
+sv xil_defaultlib  \
+"../../../../../6_BranchPrediction/cpu_rtl/btb.sv" \
+
+verilog xil_defaultlib  \
+"../../../../../6_BranchPrediction/test/testBench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
