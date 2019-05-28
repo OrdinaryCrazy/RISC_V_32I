@@ -2,14 +2,13 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun May 26 19:33:10 2019
-# Process ID: 9172
+# Start of session at: Mon May 27 22:55:07 2019
+# Process ID: 13272
 # Current directory: C:/Users/workspace/RISC_V_32I/BTBabdBHT/BTBabdBHT.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/workspace/RISC_V_32I/BTBabdBHT/BTBabdBHT.sim/sim_1/behav/xsim/xsim.dir/testBench_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/workspace/RISC_V_32I/BTBabdBHT/BTBabdBHT.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/workspace/RISC_V_32I/BTBabdBHT/BTBabdBHT.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/workspace/RISC_V_32I/BTBabdBHT/BTBabdBHT.sim/sim_1/behav/xsim/xsim.dir/testBench_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/workspace/RISC_V_32I/BTBabdBHT/BTBabdBHT.sim/sim_1/behav/xsim/xsim.dir/testBench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun May 26 19:33:16 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 84.656 ; gain = 0.969
-INFO: [Common 17-206] Exiting Webtalk at Sun May 26 19:33:16 2019...
+INFO: [Common 17-186] 'C:/Users/workspace/RISC_V_32I/BTBabdBHT/BTBabdBHT.sim/sim_1/behav/xsim/xsim.dir/testBench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon May 27 22:55:11 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon May 27 22:55:11 2019...

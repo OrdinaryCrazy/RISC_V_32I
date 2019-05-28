@@ -1,0 +1,608 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 27 18:41:53 2019
+# Process ID: 17752
+# Current directory: C:/Users/workspace/RISC_V_32I/BTBandBHT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3392 C:\Users\workspace\RISC_V_32I\BTBandBHT\BTBandBHT.xpr
+# Log file: C:/Users/workspace/RISC_V_32I/BTBandBHT/vivado.log
+# Journal file: C:/Users/workspace/RISC_V_32I/BTBandBHT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/workspace/RISC_V_32I/BTBandBHT/BTBandBHT.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source testBench.tcl
+current_wave_config {Untitled 1}
+add_wave {{/testBench/RV32Core1/BranchE}} 
+current_wave_config {Untitled 1}
+add_wave {{/testBench/RV32Core1/BranchE}} {{/testBench/RV32Core1/FlushD}} {{/testBench/RV32Core1/FlushE}} 
+current_wave_config {Untitled 1}
+add_wave {{/testBench/RV32Core1/HistoryPredictedF}} 
+current_wave_config {Untitled 1}
+add_wave {{/testBench/RV32Core1/PCE}} {{/testBench/RV32Core1/PCF}} 
+current_wave_config {Untitled 1}
+add_wave {{/testBench/RV32Core1/PredictedF}} 
+restart
+run 10 us
+restart
+run 16430 us
+restart
+run 16430 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+source testBench.tcl
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/BranchE}} 
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/FlushD}} {{/testBench/RV32Core1/FlushE}} 
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/HistoryPredictedF}} 
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/NPC_PRED}} 
+current_wave_config {Untitled 2}
+add_wave {{/testBench/RV32Core1/PCE}} {{/testBench/RV32Core1/PCF}} {{/testBench/RV32Core1/PredictedD}} {{/testBench/RV32Core1/PredictedE}} {{/testBench/RV32Core1/PredictedF}} {{/testBench/RV32Core1/PredictedPC}} 
+restart
+run 10 ns
+restart
+run 10 ns
+restart
+run 16430 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+source testBench.tcl
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/BranchE}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/FlushE}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/FlushF}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/NPC_PRED}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/HistoryPredictedF}} 
+current_wave_config {Untitled 3}
+add_wave {{/testBench/RV32Core1/HistoryPredictedF}} {{/testBench/RV32Core1/PCE}} {{/testBench/RV32Core1/PCF}} {{/testBench/RV32Core1/PredictedD}} {{/testBench/RV32Core1/PredictedE}} {{/testBench/RV32Core1/PredictedF}} {{/testBench/RV32Core1/PredictedPC}} 
+restart
+run 10 ns
+restart
+run 10 ns
+restart
+run 16430 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+source testBench.tcl
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/BranchE}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/FlushD}} {{/testBench/RV32Core1/FlushE}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/HistoryPredictedF}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/NPC_PRED}} 
+current_wave_config {Untitled 4}
+add_wave {{/testBench/RV32Core1/PCE}} {{/testBench/RV32Core1/PCF}} {{/testBench/RV32Core1/PredictedD}} {{/testBench/RV32Core1/PredictedE}} {{/testBench/RV32Core1/PredictedF}} {{/testBench/RV32Core1/PredictedPC}} 
+restart
+run 10 ns
+restart
+run 10 ns
+restart
+run 16430 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+source testBench.tcl
+current_wave_config {Untitled 5}
+add_wave {{/testBench/RV32Core1/BranchE}} 
+current_wave_config {Untitled 5}
+add_wave {{/testBench/RV32Core1/FlushD}} {{/testBench/RV32Core1/FlushE}} 
+current_wave_config {Untitled 5}
+add_wave {{/testBench/RV32Core1/HistoryPredictedF}} 
+current_wave_config {Untitled 5}
+add_wave {{/testBench/RV32Core1/NPC_PRED}} 
+current_wave_config {Untitled 5}
+add_wave {{/testBench/RV32Core1/PCE}} {{/testBench/RV32Core1/PCF}} {{/testBench/RV32Core1/PredictedD}} {{/testBench/RV32Core1/PredictedE}} {{/testBench/RV32Core1/PredictedF}} {{/testBench/RV32Core1/PredictedPC}} 
+restart
+run 10 ns
+restart
+run 10 ns
+restart
+run 16430 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+restart
+run 16430 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 16430 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+restart
+run 16430 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+current_wave_config {Untitled 5}
+add_wave {{/testBench/RV32Core1/Operand1}} 
+current_wave_config {Untitled 5}
+add_wave {{/testBench/RV32Core1/Operand2}} 
+restart
+run 16430 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+restart
+run 16430 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+current_wave_config {Untitled 5}
+add_wave {{/testBench/RV32Core1/BrNPC}} 
+restart
+run 16430 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+current_wave_config {Untitled 5}
+add_wave {{/testBench/RV32Core1/NPC_Generator1/BranchTarget}} 
+current_wave_config {Untitled 5}
+add_wave {{/testBench/RV32Core1/NPC_Generator1/PredictedE}} 
+close_sim
+launch_simulation
+source testBench.tcl
+current_wave_config {Untitled 6}
+add_wave {{/testBench/RV32Core1/BranchE}} 
+current_wave_config {Untitled 6}
+add_wave {{/testBench/RV32Core1/HistoryPredictedF}} 
+current_wave_config {Untitled 6}
+add_wave {{/testBench/RV32Core1/NPC_PRED}} 
+current_wave_config {Untitled 6}
+add_wave {{/testBench/RV32Core1/NPC_PRED}} {{/testBench/RV32Core1/PCE}} {{/testBench/RV32Core1/PCF}} {{/testBench/RV32Core1/PredictedD}} {{/testBench/RV32Core1/PredictedE}} {{/testBench/RV32Core1/PredictedF}} {{/testBench/RV32Core1/PredictedPC}} 
+restart
+run 4 ns
+restart
+run 4 ns
+restart
+run 16430 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source testBench.tcl
+close_sim
+launch_simulation
+source testBench.tcl
+current_wave_config {Untitled 8}
+add_wave {{/testBench/RV32Core1/BranchE}} {{/testBench/RV32Core1/FlushD}} {{/testBench/RV32Core1/FlushE}} 
+current_wave_config {Untitled 8}
+add_wave {{/testBench/RV32Core1/PredictedPC}} {{/testBench/RV32Core1/PredictedPCValid}} 
+current_wave_config {Untitled 8}
+add_wave {{/testBench/RV32Core1/PCE}} {{/testBench/RV32Core1/PCF}} 
+current_wave_config {Untitled 8}
+add_wave {{/testBench/RV32Core1/PCE}} {{/testBench/RV32Core1/PCF}} {{/testBench/RV32Core1/PredictedD}} {{/testBench/RV32Core1/PredictedE}} {{/testBench/RV32Core1/PredictedF}} 
+restart
+run 50 ns
+restart
+run 50 ns
+restart
+run 16430 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 4 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+close_sim

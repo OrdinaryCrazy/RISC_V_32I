@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14288 
+INFO: Helper process launched with PID 11560 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 432.281 ; gain = 98.832
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 432.125 ; gain = 99.297
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'RV32Core' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/RV32Core.v:12]
 INFO: [Synth 8-6157] synthesizing module 'NPC_Generator' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/NPC_Generator.v:12]
@@ -29,14 +29,14 @@ INFO: [Synth 8-6155] done synthesizing module 'InstructionRam' (3#1) [C:/Users/w
 INFO: [Synth 8-6155] done synthesizing module 'IDSegReg' (4#1) [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/IDSegReg.v:12]
 INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/ControlUnit.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (5#1) [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/ControlUnit.v:13]
-WARNING: [Synth 8-689] width (5) of port connection 'AluContrlD' does not match port width (4) of module 'ControlUnit' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/RV32Core.v:161]
+WARNING: [Synth 8-689] width (5) of port connection 'AluContrlD' does not match port width (4) of module 'ControlUnit' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/RV32Core.v:164]
 INFO: [Synth 8-6157] synthesizing module 'ImmOperandUnit' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/ImmOperandUnit.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'ImmOperandUnit' (6#1) [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/ImmOperandUnit.v:13]
 INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/RegisterFile.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (7#1) [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/RegisterFile.v:12]
 INFO: [Synth 8-6157] synthesizing module 'EXSegReg' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/EXSegReg.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'EXSegReg' (8#1) [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/EXSegReg.v:12]
-WARNING: [Synth 8-689] width (4) of port connection 'AluContrlE' does not match port width (5) of module 'EXSegReg' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/RV32Core.v:223]
+WARNING: [Synth 8-689] width (4) of port connection 'AluContrlE' does not match port width (5) of module 'EXSegReg' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/RV32Core.v:226]
 INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/ALU.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/ALU.v:13]
 INFO: [Synth 8-6157] synthesizing module 'BranchDecisionMaking' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/BranchDecisionMaking.v:13]
@@ -51,7 +51,6 @@ INFO: [Synth 8-6157] synthesizing module 'DataExt' [C:/Users/workspace/RISC_V_32
 INFO: [Synth 8-6155] done synthesizing module 'DataExt' (14#1) [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/DataExt.v:14]
 INFO: [Synth 8-6157] synthesizing module 'HarzardUnit' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/HarzardUnit.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'HarzardUnit' (15#1) [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/HarzardUnit.v:12]
-WARNING: [Synth 8-350] instance 'HarzardUnit1' of module 'HarzardUnit' requires 30 connections, but only 29 given [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/RV32Core.v:308]
 INFO: [Synth 8-6157] synthesizing module 'btb' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/btb.sv:1]
 	Parameter ENTRY_NUM bound to: 64 - type: integer 
 	Parameter BR_OP bound to: 7'b1100011 
@@ -70,19 +69,19 @@ WARNING: [Synth 8-3331] design IDSegReg has unconnected port A[0]
 WARNING: [Synth 8-3331] design IDSegReg has unconnected port A2[1]
 WARNING: [Synth 8-3331] design IDSegReg has unconnected port A2[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 519.461 ; gain = 186.012
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 518.324 ; gain = 185.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 519.461 ; gain = 186.012
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 518.324 ; gain = 185.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 518.324 ; gain = 185.496
+---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 519.461 ; gain = 186.012
----------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "JalD" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "JalrD" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "MemToRegD" won't be mapped to RAM because it is too sparse
@@ -184,16 +183,14 @@ INFO: [Synth 8-5546] ROM "BranchInstrAddress_reg[3]" won't be mapped to RAM beca
 INFO: [Synth 8-5546] ROM "BranchInstrAddress_reg[2]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "BranchInstrAddress_reg[1]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "BranchInstrAddress_reg[0]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "PredictedF" won't be mapped to RAM because it is too sparse
-INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5545] ROM "Tail" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "BranchInstrAddress_reg[63]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "BranchInstrAddress_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5544] ROM "Tail" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 WARNING: [Synth 8-327] inferring latch for variable 'OUT_reg' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/DataExt.v:27]
-WARNING: [Synth 8-327] inferring latch for variable 'PredictedPC_reg' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/btb.sv:30]
-WARNING: [Synth 8-327] inferring latch for variable 'PredictedF_reg' [C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/btb.sv:25]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 661.340 ; gain = 327.891
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 656.012 ; gain = 323.184
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -207,12 +204,13 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 4     
+	   2 Input     32 Bit       Adders := 5     
 	   3 Input     32 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
 	               32 Bit    Registers := 176   
+	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 6     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 4     
@@ -234,7 +232,7 @@ Detailed RTL Component Info :
 	   7 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 4     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 557   
+	   2 Input      1 Bit        Muxes := 494   
 	   6 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 63    
 	  64 Input      1 Bit        Muxes := 1     
@@ -254,7 +252,7 @@ Detailed RTL Component Info :
 Module NPC_Generator 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
 Module IFSegReg 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -296,6 +294,7 @@ Module EXSegReg
 Detailed RTL Component Info : 
 +---Registers : 
 	               32 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 4     
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 2     
@@ -343,7 +342,7 @@ Module HarzardUnit
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 7     
 Module btb 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -352,7 +351,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	  65 Input     32 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 63    
-	   2 Input      1 Bit        Muxes := 517   
+	   2 Input      1 Bit        Muxes := 452   
 	  64 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -389,7 +388,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (WBSegReg1
 INFO: [Synth 8-3886] merging instance 'EXSegReg1/MemWriteE_reg[3]' (FDRE) to 'EXSegReg1/MemWriteE_reg[2]'
 INFO: [Synth 8-3886] merging instance 'MEMSegReg1/MemWriteM_reg[3]' (FDRE) to 'MEMSegReg1/MemWriteM_reg[2]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:51 ; elapsed = 00:03:50 . Memory (MB): peak = 878.465 ; gain = 545.016
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:07 ; elapsed = 00:05:18 . Memory (MB): peak = 878.305 ; gain = 545.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -434,7 +433,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:54 ; elapsed = 00:03:54 . Memory (MB): peak = 878.465 ; gain = 545.016
+Finished Timing Optimization : Time (s): cpu = 00:05:13 ; elapsed = 00:05:25 . Memory (MB): peak = 878.305 ; gain = 545.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -477,7 +476,7 @@ INFO: [Synth 8-6837] The timing for the instance WBSegReg1/DataRamInst/ram_cell_
 INFO: [Synth 8-6837] The timing for the instance WBSegReg1/DataRamInst/ram_cell_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance WBSegReg1/DataRamInst/ram_cell_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:59 ; elapsed = 00:03:59 . Memory (MB): peak = 878.465 ; gain = 545.016
+Finished Technology Mapping : Time (s): cpu = 00:05:23 ; elapsed = 00:05:35 . Memory (MB): peak = 878.305 ; gain = 545.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -501,7 +500,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:01 ; elapsed = 00:04:01 . Memory (MB): peak = 878.465 ; gain = 545.016
+Finished IO Insertion : Time (s): cpu = 00:05:25 ; elapsed = 00:05:38 . Memory (MB): peak = 878.305 ; gain = 545.477
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -514,7 +513,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:01 ; elapsed = 00:04:01 . Memory (MB): peak = 878.465 ; gain = 545.016
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:26 ; elapsed = 00:05:38 . Memory (MB): peak = 878.305 ; gain = 545.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -526,25 +525,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:01 ; elapsed = 00:04:01 . Memory (MB): peak = 878.465 ; gain = 545.016
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:26 ; elapsed = 00:05:38 . Memory (MB): peak = 878.305 ; gain = 545.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:01 ; elapsed = 00:04:01 . Memory (MB): peak = 878.465 ; gain = 545.016
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:26 ; elapsed = 00:05:38 . Memory (MB): peak = 878.305 ; gain = 545.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:01 ; elapsed = 00:04:01 . Memory (MB): peak = 878.465 ; gain = 545.016
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:26 ; elapsed = 00:05:38 . Memory (MB): peak = 878.305 ; gain = 545.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:01 ; elapsed = 00:04:01 . Memory (MB): peak = 878.465 ; gain = 545.016
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:26 ; elapsed = 00:05:39 . Memory (MB): peak = 878.305 ; gain = 545.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -560,19 +559,19 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |BUFG     |     3|
-|2     |CARRY4   |   454|
-|3     |LUT1     |     4|
-|4     |LUT2     |   197|
-|5     |LUT3     |   137|
-|6     |LUT4     |   480|
-|7     |LUT5     |   475|
-|8     |LUT6     |  3281|
-|9     |MUXF7    |   275|
+|1     |BUFG     |     2|
+|2     |CARRY4   |   462|
+|3     |LUT1     |     5|
+|4     |LUT2     |   201|
+|5     |LUT3     |   133|
+|6     |LUT4     |   450|
+|7     |LUT5     |   509|
+|8     |LUT6     |  3324|
+|9     |MUXF7    |   276|
 |10    |RAMB36E1 |     8|
 |11    |FDCE     |  5168|
-|12    |FDRE     |   447|
-|13    |LD       |    65|
+|12    |FDRE     |   456|
+|13    |LD       |    32|
 |14    |IBUF     |   134|
 |15    |OBUF     |    64|
 +------+---------+------+
@@ -581,42 +580,42 @@ Report Instance Areas:
 +------+-----------------------+---------------+------+
 |      |Instance               |Module         |Cells |
 +------+-----------------------+---------------+------+
-|1     |top                    |               | 11192|
+|1     |top                    |               | 11224|
 |2     |  RegisterFile1        |RegisterFile   |  1824|
 |3     |  DataExt1             |DataExt        |    32|
-|4     |  EXSegReg1            |EXSegReg       |   943|
-|5     |  IDSegReg1            |IDSegReg       |   230|
-|6     |    InstructionRamInst |InstructionRam |   127|
-|7     |  IFSegReg1            |IFSegReg       |    44|
+|4     |  EXSegReg1            |EXSegReg       |  1005|
+|5     |  IDSegReg1            |IDSegReg       |   198|
+|6     |    InstructionRamInst |InstructionRam |    92|
+|7     |  IFSegReg1            |IFSegReg       |    41|
 |8     |  ImmOperandUnit1      |ImmOperandUnit |    42|
-|9     |  MEMSegReg1           |MEMSegReg      |   196|
-|10    |  WBSegReg1            |WBSegReg       |   243|
+|9     |  MEMSegReg1           |MEMSegReg      |   193|
+|10    |  WBSegReg1            |WBSegReg       |   235|
 |11    |    DataRamInst        |DataRam        |    68|
-|12    |  btb1                 |btb            |  7437|
+|12    |  btb1                 |btb            |  7454|
 +------+-----------------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:01 ; elapsed = 00:04:01 . Memory (MB): peak = 878.465 ; gain = 545.016
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:26 ; elapsed = 00:05:39 . Memory (MB): peak = 878.305 ; gain = 545.477
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:01 ; elapsed = 00:04:01 . Memory (MB): peak = 878.465 ; gain = 545.016
-Synthesis Optimization Complete : Time (s): cpu = 00:04:01 ; elapsed = 00:04:01 . Memory (MB): peak = 878.465 ; gain = 545.016
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:26 ; elapsed = 00:05:39 . Memory (MB): peak = 878.305 ; gain = 545.477
+Synthesis Optimization Complete : Time (s): cpu = 00:05:26 ; elapsed = 00:05:39 . Memory (MB): peak = 878.305 ; gain = 545.477
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 802 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 778 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 878.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 878.305 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 65 instances were transformed.
-  LD => LDCE: 65 instances
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-186 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+186 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:07 ; elapsed = 00:04:09 . Memory (MB): peak = 878.465 ; gain = 557.832
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 878.465 ; gain = 0.000
+synth_design: Time (s): cpu = 00:05:35 ; elapsed = 00:05:50 . Memory (MB): peak = 878.305 ; gain = 558.621
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 878.305 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/workspace/RISC_V_32I/BTBabdBHT/BTBabdBHT.runs/synth_1/RV32Core.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file RV32Core_utilization_synth.rpt -pb RV32Core_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun May 26 17:24:58 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 22:57:30 2019...

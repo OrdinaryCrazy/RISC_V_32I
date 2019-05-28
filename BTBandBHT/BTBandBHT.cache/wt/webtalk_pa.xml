@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon May 27 10:05:15 2019">
+<application name="pa" timeStamp="Tue May 28 08:00:45 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="e07d5a912ae04e9e991b181c9187b5d1" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -20,27 +20,50 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddSources" value="4" type="JavaHandler"/>
 <property name="EditDelete" value="1" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
+<property name="RunSynthesis" value="4" type="JavaHandler"/>
+<property name="ShowView" value="4" type="JavaHandler"/>
+<property name="SimulationRestart" value="30" type="JavaHandler"/>
+<property name="SimulationRun" value="9" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="516" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="3" type="JavaHandler"/>
+<property name="ZoomIn" value="2" type="JavaHandler"/>
+<property name="ZoomOut" value="5" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
 <property name="AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_CANCEL" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="3" type="GuiHandlerData"/>
+<property name="BaseDialog_CANCEL" value="3" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="9" type="GuiHandlerData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_FAMILY" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_FPGA_TABLE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_PACKAGE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_SPEED" value="1" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="17" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="29" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="23" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
+<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="9" type="GuiHandlerData"/>
+<property name="NumJobsChooser_NUMBER_OF_JOBS" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_ADD_SOURCES" value="4" type="GuiHandlerData"/>
 <property name="PACommandNames_AUTO_UPDATE_HIER" value="4" type="GuiHandlerData"/>
-<property name="ProgressDialog_CANCEL" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_SIMULATION_LIVE_RESTART" value="30" type="GuiHandlerData"/>
+<property name="PACommandNames_SIMULATION_LIVE_RUN" value="590" type="GuiHandlerData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="9" type="GuiHandlerData"/>
+<property name="PAViews_CODE" value="4" type="GuiHandlerData"/>
+<property name="PAViews_PROJECT_SUMMARY" value="12" type="GuiHandlerData"/>
+<property name="ProgressDialog_BACKGROUND" value="1" type="GuiHandlerData"/>
+<property name="ProgressDialog_CANCEL" value="2" type="GuiHandlerData"/>
 <property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiHandlerData"/>
 <property name="RDICommands_DELETE" value="1" type="GuiHandlerData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="94" type="GuiHandlerData"/>
+<property name="SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS" value="42" type="GuiHandlerData"/>
+<property name="SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE" value="262" type="GuiHandlerData"/>
+<property name="SimulationScopesPanel_SIMULATE_SCOPE_TABLE" value="53" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_ADD_DIRECTORIES" value="1" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_CREATE_FILE" value="2" type="GuiHandlerData"/>
 <property name="SrcMenu_IP_HIERARCHY" value="4" type="GuiHandlerData"/>
+<property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="202" type="GuiHandlerData"/>
+<property name="WaveformView_GOTO_LAST_TIME" value="6" type="GuiHandlerData"/>
 </item>
 <item name="Other">
 <property name="GuiMode" value="2" type="GuiMode"/>

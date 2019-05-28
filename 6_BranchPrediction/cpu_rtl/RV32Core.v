@@ -112,6 +112,7 @@ module RV32Core(
         .JalD(JalD),
         .JalrE(JalrE),
 //------------------------------------------
+        .PCE(PCE),
         .PC_In(PC_In),
         .PredictedPC(PredictedPC),
         .PredictedF(PredictedF),

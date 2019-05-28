@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../BTBandBHT.srcs/cpu_rtl/ALU.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/BranchDecisionMaking.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/ControlUnit.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/DataExt.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/BRAMModule/DataRam.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/EXSegReg.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/HarzardUnit.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/IDSegReg.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/IFSegReg.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/ImmOperandUnit.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/BRAMModule/InstructionRam.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/MEMSegReg.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/NPC_Generator.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/RV32Core.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/RegisterFile.v" \
+"../../../../BTBandBHT.srcs/cpu_rtl/WBSegReg.v" \
+
+sv xil_defaultlib  \
+"../../../../BTBandBHT.srcs/cpu_rtl/bht.sv" \
+"../../../../BTBandBHT.srcs/cpu_rtl/btb.sv" \
+
+verilog xil_defaultlib  \
+"../../../testBench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

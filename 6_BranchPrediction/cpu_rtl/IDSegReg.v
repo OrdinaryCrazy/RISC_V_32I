@@ -33,7 +33,7 @@ module IDSegReg(
 //------------------------------------------
     initial PredictedD = 0;
     always@(posedge clk)
-        PredictedD <= PredictedF;
+        PredictedD <= clear ? 0 : PredictedF;
 //------------------------------------------
     initial PCD = 0;
     always@(posedge clk)

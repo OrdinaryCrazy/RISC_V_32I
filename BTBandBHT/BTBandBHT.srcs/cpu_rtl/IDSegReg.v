@@ -33,12 +33,12 @@ module IDSegReg(
 //------------------------------------------
     initial PredictedD = 0;
     always@(posedge clk)
-        PredictedD <= PredictedF;
+        PredictedD <= clear ? 0 : PredictedF;
 //------------------------------------------
     initial PCD = 0;
     always@(posedge clk)
         if(en)
-            PCD <= clear ? 0: PCF;
+            PCD <= clear ? 0 : PCF;
     
     wire [31:0] RD_raw;
     InstructionRam InstructionRamInst (

@@ -30,3 +30,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/6_Bra
 INFO: [VRFC 10-311] analyzing module RegisterFile
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/6_BranchPrediction/cpu_rtl/WBSegReg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WBSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/workspace/RISC_V_32I/6_BranchPrediction/test/testBench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testBench

@@ -86,8 +86,7 @@ module RV32Core(
     wire PredictedF;
     wire PredictedD;
     wire PredictedE;
-    wire HistoryPredictedF;
-    wire NPC_PRED;
+    wire PredictedPCValid;
     wire [31:0] PredictedPC;
     wire [6:0] OpE;
 //------------------------------------------
@@ -100,9 +99,6 @@ module RV32Core(
     assign Operand2 = AluSrc2E[1]?(ImmE):( AluSrc2E[0]?Rs2E:ForwardData2 );
     assign ResultM = LoadNpcM ? (PCM+4) : AluOutM;
     assign RegWriteData = ~MemToRegW?ResultW:DM_RD_Ext;
-//------------------------------------------
-    assign NPC_PRED = PredictedF & HistoryPredictedF;
-//------------------------------------------
 
     //Module connections
     // ---------------------------------------------
@@ -117,9 +113,11 @@ module RV32Core(
         .JalD(JalD),
         .JalrE(JalrE),
 //------------------------------------------
+        .PCE(PCE),
         .PC_In(PC_In),
         .PredictedPC(PredictedPC),
-        .PredictedF(NPC_PRED),
+        .PredictedPCValid(PredictedPCValid),
+        .PredictedF(PredictedF),
         .PredictedE(PredictedE)
 //------------------------------------------
     );
@@ -148,7 +146,7 @@ module RV32Core(
         .PCF(PCF),
 //------------------------------------------
         .PCD(PCD),
-        .PredictedF(PredictedF),
+        .PredictedF(PredictedF & PredictedPCValid),
         .PredictedD(PredictedD)
 //------------------------------------------
     );
@@ -363,21 +361,19 @@ module RV32Core(
         .BranchE(BranchE),
         .OpE(OpE),
         .PredictedPC(PredictedPC),
-        .PredictedF(PredictedF)
+        .PredictedPCValid(PredictedPCValid)
     );
     // ---------------------------------------------
     // bht Unit
     // ---------------------------------------------
-    bht #(
-        .ENTRY_NUM(64)
-    ) bht1 (
+    bht bht1 (
         .clk(CPU_CLK),
         .rst(CPU_RST),
-        .PCF(PCF),
-        .PCE(PCE),
+        .tag(PCF[9:2]),
+        .tagE(PCE[9:2]),
         .BranchE(BranchE),
         .OpE(OpE),
-        .HistoryPredictedF(HistoryPredictedF)
+        .PredictedF(PredictedF)
     );
 //------------------------------------------
 endmodule
