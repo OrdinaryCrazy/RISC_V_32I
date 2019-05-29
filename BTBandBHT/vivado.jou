@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue May 28 07:55:27 2019
-# Process ID: 6600
+# Start of session at: Tue May 28 09:51:22 2019
+# Process ID: 15116
 # Current directory: C:/Users/workspace/RISC_V_32I/BTBandBHT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9612 C:\Users\workspace\RISC_V_32I\BTBandBHT\BTBandBHT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7552 C:\Users\workspace\RISC_V_32I\BTBandBHT\BTBandBHT.xpr
 # Log file: C:/Users/workspace/RISC_V_32I/BTBandBHT/vivado.log
 # Journal file: C:/Users/workspace/RISC_V_32I/BTBandBHT\vivado.jou
 #-----------------------------------------------------------
@@ -15,76 +15,25 @@ update_compile_order -fileset sources_1
 launch_simulation
 source testBench.tcl
 current_wave_config {Untitled 1}
-add_wave {{/testBench/RV32Core1/BranchE}} 
-current_wave_config {Untitled 1}
-add_wave {{/testBench/RV32Core1/FlushE}} 
-current_wave_config {Untitled 1}
-add_wave {{/testBench/RV32Core1/FlushD}} 
-current_wave_config {Untitled 1}
-add_wave {{/testBench/RV32Core1/FlushD}} {{/testBench/RV32Core1/PCE}} {{/testBench/RV32Core1/PCF}} {{/testBench/RV32Core1/PredictedD}} {{/testBench/RV32Core1/PredictedE}} {{/testBench/RV32Core1/PredictedF}} {{/testBench/RV32Core1/PredictedPC}} {{/testBench/RV32Core1/PredictedPCValid}} 
+add_wave {{/testBench/RV32Core1/PCE}} {{/testBench/RV32Core1/PCF}} 
 restart
-run 50 ns
-restart
-run 50 ns
+run 4 ns
 restart
 run 16430 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
-run 4 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
 close_sim
