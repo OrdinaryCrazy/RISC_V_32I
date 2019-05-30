@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1558968692">
   <File Type="PA-TCL" Name="RV32Core.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="RV32Core_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="RV32Core_reports.tcl"/>
   <File Type="RDS-RDS" Name="RV32Core.vds"/>
   <File Type="RDS-UTIL" Name="RV32Core_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="RV32Core_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="RV32Core.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="RV32Core_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="RV32Core_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../6_BranchPrediction/cpu_rtl/Parameters.v">
